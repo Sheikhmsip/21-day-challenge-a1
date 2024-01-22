@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="import" href="index.html" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="bg-[#FFFFE9] py-10">
+      <nav class="text-center mx-auto w-full">
+        <ul class="text-xl text-bold flex justify-center gap-5">
+          <li>Home</li>
+          <a href="/index.html"><li>About Us</li></a>
+          <li class="font-extrabold">Contract</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contact section  -->
+    <section class="bg-[#FFFFE9]  ">
+      <h1 class="md:text-[96px] text-[50px] text-center font-bold">Contact Us</h1>
+      <p class="text-[24px] text-center font-leto font-semibold">
+        Get in touch! Have a question or feedback? Use our contact
+        <br class="hidden md:block" />
+        form or drop us an email. We're here to help!
+      </p>
+<!-- Form -->
+      <div class="md:w-[70%] w-[90%] grid grid-cols-1 md:grid-cols-2 justify-between gap-4 rounded-xl mx-auto bg-[#201F1F] my-10">
+        <div class="pl-6">
+          <h3 class="text-[32px] text-white pt-24">Get in touch with us</h3>
+          <form action="">
+            <label class="form-control  w-[90%] ">
+                <div class="label">
+                  <span class="label-text text-[#CCC6C6]">Name</span>
+                </div>
+                <input type="text" placeholder="Rachel Joe" class="input text-white   input-bordered bg-[#343333] " />
+              </label>
+
+              <label class="form-control w-[90%] ">
+                <div class="label">
+                  <span class="label-text text-[#CCC6C6]">Email</span>
+                </div>
+                <input type="email" placeholder="Rachel@domain.com" class="input text-white  input-bordered bg-[#343333] w-full " />
+              </label>
+
+              <label class="form-control w-[90%]">
+                <div class="label">
+                  <span class="label-text text-[#CCC6C6]">Message</span>
+                </div>
+                <textarea class="textarea   textarea-bordered text-white bg-[#343333] " placeholder="Type your query here...."></textarea>
+              </label>
+              <button type="submit" class="px-10 py-2 bg-[#F3F25B] rounded-lg mt-4 font-semibold" >Send my message</button>
+          </form>
+        </div>
+        <div>
+            <img src="./assets/image/map.png" alt="">
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
