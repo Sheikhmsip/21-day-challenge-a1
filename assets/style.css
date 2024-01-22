@@ -1,10 +1,9 @@
 
 .bg{
     background-image: url(./image/banner.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-
-    background-position: center;
+    /* background-position: center; */
     margin-top: 20px;
     /* height: 530px; */
 }
