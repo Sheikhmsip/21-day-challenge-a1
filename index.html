@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="import" href="about.html">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body >
+  <body>
     <!-- Navbar section -->
-    <Header class="bg-[#FFFFE9]">
-    <nav class="bg-[#FFFFE9] text-center mx-auto w-full">
-      <ul class="text-bold flex justify-center gap-5">
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Contract Us</li>
-      </ul>
-    </nav>
-</Header>
+    <header class="bg-[#FFFFE9] py-10">
+      <nav class="text-center mx-auto w-full">
+        <ul class="text-xl text-bold flex justify-center gap-5">
+          <li>Home</li>
+          <li>About Us</li>
+          <a href="/about.html"><li>Contract Us</li></a>
+        </ul>
+      </nav>
+    </header>
     <!-- Banner section -->
 
     <main class="bg-[#FFFFE9]">
@@ -136,40 +137,87 @@
       </section>
     </main>
 
-        <!-- Customers Section -->
-      <section class="bg-white my-5 px-2 w-[90%] mx-auto">
-        <div class="flex justify-between py-3">
-          <h3 class="text-2xl pb-2 font-bold">Happy Customers Says</h3>
-          <div class="hidden md:grid grid-cols-2 items-center gap-3">
+    <!-- Customers Section -->
+    <section class="bg-white my-5 px-2 w-[90%] mx-auto">
+      <div class="flex justify-between py-3">
+        <h3 class="text-4xl pb-2 font-bold">Happy Customers Says</h3>
+        <div class="hidden md:grid grid-cols-2 items-center gap-3">
+          <img
+            class="w-12 h-12 bg-[#EFEFEF] rounded-full p-4"
+            src="./assets/image/arrow-left-dark.png"
+            alt=""
+          />
+          <img
+            class="w-12 h-12 bg-[#FA8B02] rounded-full p-4"
+            src="./assets/image/arrow-right-white.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-2 justify-between items-center my-20"
+      >
+        <div class="text-center py-3 rounded-xl bg-[#FFFFE9] border relative">
+          <img
+            class="absolute right-4 opacity-20"
+            src="./assets/image/comma.png"
+            alt=""
+          />
+          <img class="mx-auto" src="./assets/image/face.png" alt="" />
+          <h6 class="my-4">Lyod Gomez</h6>
+          <p>
+            But I must explain to you how all this mistaken idea of
+            <br class="hidden md:block" />
+            denouncing pleasure and praising pain was born and I will
+            <br class="hidden md:block" />
+            give you a complete account of the system.
+          </p>
+        </div>
+        <div>
+          <div class="text-center py-3 rounded-xl border relative bg-[#FFFFE9]">
             <img
-              class="w-12 h-12 bg-[#EFEFEF] rounded-full p-4"
-              src="./assets/image/arrow-left-dark.png"
+              class="absolute right-4 opacity-20"
+              src="./assets/image/comma.png"
               alt=""
             />
-            <img
-              class="w-12 h-12 bg-[#FA8B02] rounded-full p-4"
-              src="./assets/image/arrow-right-white.png"
-              alt=""
-            />
+            <img class="mx-auto" src="./assets/image/face.png" alt="" />
+
+            <h6 class="my-4">Lyod Gomez</h6>
+            <p>
+              But I must explain to you how all this mistaken idea of
+              <br class="hidden md:block" />
+              denouncing pleasure and praising pain was born and I will
+              <br class="hidden md:block" />
+              give you a complete account of the system.
+            </p>
           </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2  gap-2 justify-between items-center my-20">
-            <div class="text-center py-3 rounded-xl bg-[#FFFFE9] border relative">
-                <img class="absolute right-4 opacity-20" src="./assets/image/comma.png" alt="">
-                <img class="mx-auto" src="./assets/image/face.png" alt="">
-                <h6 class="my-4">Lyod Gomez</h6>
-                <p>But I must explain to you how all this mistaken idea of <br> denouncing pleasure and praising pain was born and I will <br> give you a complete account of the system.</p>
-            </div>
-            <div>
-                <div class="text-center py-3 rounded-xl border relative bg-[#FFFFE9]">
-                    <img class="absolute right-4 opacity-20" src="./assets/image/comma.png" alt="">
-                    <img class="mx-auto" src="./assets/image/face.png" alt="">
-                    
-                    <h6 class="my-4">Lyod Gomez</h6>
-                    <p>But I must explain to you how all this mistaken idea of <br> denouncing pleasure and praising pain was born and I will <br> give you a complete account of the system.</p>
-                </div>
-            </div>
+      </div>
+    </section>
+    <!-- Why this section  -->
+    <section class="bg-[#FFFFE9] py-32">
+      <div class="text-center">
+        <h1 class="text-[45px] font-semibold">Why it’s works</h1>
+        <hr class="w-[23%] bg-[#F3F25B] h-[4px] mx-auto" />
+      </div>
+      <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 justify-between items-center gap-5 py-10">
+        <div class="text-center">
+            <img class="mx-auto" src="./assets/image/icon1.png" alt="">
+            <h3 class="text-[24px] font-semibold py-5">Personalized learning</h3>
+            <p class="text-[18px] font-semibold">Students practice at their own pace, first filling in gaps in their understanding and then accelerating their learning.</p>
         </div>
-      </section>
+        <div class="text-center">
+            <img class="mx-auto" src="./assets/image/icon2.png" alt="">
+            <h3 class="text-[24px] font-semibold py-5">Personalized learning</h3>
+            <p class="text-[18px] font-semibold">Students practice at their own pace, first filling in gaps in their understanding and then accelerating their learning.</p>
+        </div>
+        <div class="text-center">
+            <img class="mx-auto" src="./assets/image/icon3.png" alt="">
+            <h3 class="text-[24px] font-semibold py-5">Personalized learning</h3>
+            <p class="text-[18px] font-semibold">Students practice at their own pace, first filling in gaps in their understanding and then accelerating their learning.</p>
+        </div>
+      </div>
+      <div class="w-full h-3 bg-[#F3F25B] mt-12"></div>
+    </section>
   </body>
 </html>
